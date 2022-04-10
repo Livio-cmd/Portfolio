@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: proxyLight;
+  src: url("../fonts/Proxima Nova Alt Light.otf");
+}
+@font-face {
+  font-family: proxyReg;
+  src: url("../fonts/Proxima Nova Alt Regular.otf");
+}
+@font-face {
+  font-family: proxyBold;
+  src: url("../fonts/Proxima Nova Alt Bold.otf");
+}
+@font-face {
+  font-family: acuminBold;
+  src: url("../fonts/Acumin-BdPro.woff");
+}
+@font-face {
+  font-family: acuminReg;
+  src: url("../fonts/Acumin-RPro.woff");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #040404;
+  color: #fff;
+  font-family: proxyReg;
+}
+
+mark {
+  font-weight: 600;
+  padding: 5px;
+  background-color: #acacca;
+}
+
+h1, h2, h3, h4 {
+  font-family: proxyReg;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.4em;
+  font-size: 2rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 400;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+a[class=button-black]:hover {
+  color: #000;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+a[class=button-white]:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #000;
+}
+
+input[class=button-white], input[class=button-black] {
+  transition: all 0.3s ease-in-out !important;
+  outline: 2px solid transparent !important;
+  padding: 15px !important;
+}
+input[class=button-white][class=button-black]:hover, input[class=button-black][class=button-black]:hover {
+  color: #000;
+  outline: 2px solid #000;
+  background-color: #fff;
+}
+input[class=button-white][class=button-white]:hover, input[class=button-black][class=button-white]:hover {
+  color: #fff;
+  outline: 2px solid #fff;
+  background-color: #000;
+}
+
+img {
+  width: 100%;
+}
+
+.button-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.button-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container2 {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container3 a, .container3 div {
+  margin-top: 5vh;
+}
+.container3 h2 {
+  font-size: 3rem;
+  font-family: Poppins;
+  font-weight: 500;
+  max-width: 70%;
+  text-align: center;
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background-color: goldenrod;
+  box-shadow: 0 0 6px 3px goldenrod;
+  border-radius: 100px;
+  left: -15px;
+  bottom: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5% 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #040404;
+  z-index: 2;
+}
+nav a {
+  font-size: 18px;
+  position: relative;
+  outline: 2px solid transparent;
+}
+nav a:hover {
+  background-color: #acacca;
+  color: #000;
+}
+nav #site-title {
+  font-family: proxyReg;
+  font-size: 4rem;
+  outline: none;
+  position: relative;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: none;
+}
+nav #site-title::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0%;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  transition: all 0.33s ease-in-out;
+}
+nav #site-title::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0%;
+  background-color: white;
+  right: 0;
+  top: 0;
+  transition: all 0.33s ease-in-out;
+}
+nav #site-title:hover::before, nav #site-title:hover::after {
+  height: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  right: 0;
+}
+nav ul li {
+  margin: 2vw;
+}
+
+.top-page {
+  margin-top: 12vw;
+  display: flex;
+  flex-direction: column;
+}
+.top-page h1 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 3rem;
+  max-width: 1650px;
+  margin: 7vw 0;
+  position: relative;
+}
+.top-page h4 {
+  margin: 2vw 0;
+  max-width: 761px;
+  font-family: proxyLight;
+  font-size: 26px;
+}
+
+.projects-banner {
+  margin-top: 12vh;
+}
+.projects-banner .container3 {
+  padding: 12vw 0;
+  background-color: white;
+  color: #000;
+}
+
+.contact-banner {
+  padding: 24vh 0;
+  background-color: #040404;
+  color: #fff;
+  margin: 0;
+}
+
+.contact-banner-white {
+  padding: 24vh 0;
+  background-color: #fff;
+  color: #040404;
+  margin: 0;
+}
+
+footer {
+  padding: 5vw 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer span {
+  font-size: 18px;
+}
+footer h3 {
+  font-family: Poppins;
+  font-weight: 400;
+  margin: 25px 0;
+  padding: 0;
+}
+footer h3 a {
+  position: relative;
+  padding: 0;
+  font-size: 3rem;
+}
+footer h3 a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  transition: all 0.2s ease-in-out;
+}
+footer h3 a:hover::after {
+  box-shadow: 0 0 9px 4px goldenrod;
+}
+
+.page-banner {
+  margin-top: 15vh;
+}
+.page-banner .container3 {
+  height: 50vh;
+}
+.page-banner .container3 h1 {
+  font-family: acuminReg;
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.histoire-banner {
+  padding: 24vh 0;
+  background-color: #040404;
+  color: #fff;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects .project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 41%;
+  margin: 1.5vw;
+  cursor: pointer;
+}
+.projects .project-container .project-image {
+  overflow: hidden;
+  display: flex;
+  width: 45vw;
+  height: auto;
+}
+.projects .project-container .project-image img {
+  transition: transform 0.3s ease-in-out;
+}
+.projects .project-container .project-image img:hover {
+  transform: scale(1.1);
+}
+.projects .project-container span {
+  margin-top: 25px;
+  font-family: acuminReg;
+  font-size: 32px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services .service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 27%;
+  margin: 1.5vw;
+  padding: 25px;
+  cursor: pointer;
+}
+.services .service-container h4[class=service-title] {
+  margin-top: 25px;
+  font-family: acuminReg;
+  font-weight: 500;
+  font-size: 32px;
+  padding: 5px;
+}
+.services .service-container h4 {
+  margin-top: 25px;
+  font-family: acuminReg;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.contact {
+  margin-top: 12vw;
+}
+.contact .container2 {
+  align-items: flex-start;
+  width: 50%;
+}
+.contact h2 {
+  text-align: left;
+  font-family: acuminReg;
+  font-weight: 500;
+  max-width: 900px;
+}
+.contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12vh 0;
+}
+.contact form .form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact form .form-row .input:nth-child(1) input {
+  width: 95%;
+}
+.contact form .send {
+  width: 100%;
+}
+.contact form .send input {
+  cursor: pointer;
+}
+.contact form .input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 15px 0;
+}
+.contact form .input .input-title {
+  margin-bottom: 10px;
+}
+.contact form input, .contact form textarea {
+  padding: 1vw 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.contact form textarea {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.histoire {
+  margin: 10vw 0;
+}
+.histoire h3 {
+  width: 50%;
+  margin: 10vw 0;
+  position: relative;
+  padding-left: 15px;
+}
+.histoire h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 4px;
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */

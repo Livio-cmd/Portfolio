@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livio</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <section id="start" class="start">
+        <div class="modal">
+            <h1>POP UP</h1>
+            <p>Ce site est en cours de création, il n'est pas terminé ! <br> je vous souhaite la bienvenue sur mon site. <br><br><mark>Livio</mark></p>
+            <button id="closer">Fermer</button>
+        </div>
+    </section>
+    <style>
+
+        button {
+            padding: 15px;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            color: tomato;
+            font-size: 24px;
+        }
+
+        .start {
+            z-index: 3;
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: all 0.3s ease-in;
+        }
+        .modal {
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal p {
+            font-size: 24px;
+        }
+    </style>
+    <section id="home">
+        <span style="opacity: 0;">Livio site</span>
+    </section>
+    <header>
+        <nav>
+            <div class="container">
+                <a style="letter-spacing: 10px;" href="#home" id="site-title"><span>L</span><span>I</span><span>V</span><span>I</span><span>O</span></a>
+                <ul>
+                    <li><a href="/mon-travail.html">Mon travail</a></li>
+                    <li><a href="/mes-services.html">Mes services</a></li>
+                    <li><a href="#histoire-banner">Mon histoire</a></li>
+                    <li><a href="#contact-banner">Me contacter</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="top-page" class="top-page">
+        <div class="container2">
+            <h1>Cher visiteur, <br> vous souhaitez créer un site qui répond a vos attentes ? Vous êtes au bon endroit accompagné des bonnes personnes.</h1>
+            <img class="zoom-in" src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1640&q=100" alt="notre équipe qui travaille">
+            <div class="fade-up">
+                <h4>Je m'appelle Livio, je suis un étudiant à la recherche de clients pour une première éxperience dans le monde du travail et un premier revenue et tout cela, grâce à mes compétences de developpeur web acquises après de multiples années d'apprentissage dans le domaine.</h4>
+            </div>
+            <div class="fade-up">
+                <a href="/mes-services.html" class="button-white">Mes services</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-banner" class="projects-banner">
+        <div class="container3">
+            <h2 class="fade-left">Des projets réalisés grâce à vous.</h2>
+            <div class="fade-right">
+                <a class="button-black" href="/mon-travail.html">Découvrez mes projets</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="histoire-banner" class="histoire-banner">
+        <div class="container3">
+            <h2 class="fade-up">Tout commence ici.</h2>
+            <div class="fade-up">
+                <a class="button-white" href="/mon-histoire.html">Découvrez mon histoire</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-banner" class="contact-banner-white">
+        <div class="container3">
+            <h2 class="flipy">J'adorerais travailler avec vous.</h2>
+            <div class="fade-down">
+                <a  class="button-black" href="/me-contacter.html">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h3><a href="/mon-travail.html">Mon travail</a></h3>
+            <h3><a href="/mes-services.html">Mes services</a></h3>
+            <h3><a href="/mon-histoire.html">Mon histoire</a></h3>
+            <h3><a href="/me-contacter.html">Me contacter</a></h3>
+        </div>
+        <span>Portfolio <u>Livio</u> </span>
+    </footer>
+    <script type="text/Javascript" src="./script.js"></script>
+</body>
+</html>
